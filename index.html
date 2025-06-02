@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minha Página</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 2rem 0;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 2rem auto;
+      max-width: 1200px;
+      gap: 1.5rem;
+    }
+
+    .card {
+      flex: 1;
+      min-width: 280px;
+      max-width: 30%;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    h2 {
+      margin-top: 0.5rem;
+    }
+
+    @media (max-width: 900px) {
+      .card {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Bem-vindo à Minha Página</h1>
+  <p>Conheça mais sobre mim, meus projetos e novidades</p>
+</header>
+
+<div class="container">
+  <!-- Sobre Mim -->
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1" alt="Sobre mim">
+    <h2>Sobre Mim</h2>
+    <p>Sou um entusiasta da tecnologia, apaixonado por design e inovação. Acredito que boas ideias podem transformar o mundo, principalmente quando combinadas com dedicação e criatividade. Estou sempre em busca de novos aprendizados.</p>
+  </div>
+
+  <!-- Projetos -->
+  <div class="card">
+    <img src="projeto.png" alt="Projetos">
+    <h2>Projetos</h2>
+    <p>Desenvolvi soluções em diferentes áreas, desde sites responsivos até aplicações com inteligência artificial. Gosto de trabalhar com projetos que tenham impacto positivo e que desafiem os limites da tecnologia.</p>
+  </div>
+
+  <!-- Novidades -->
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1581092160613-8f3b9d1b1e3e" alt="Novidades">
+    <h2>Novidades</h2>
+    <p>Atualmente estou explorando o uso de IA generativa para auxiliar na criação de conteúdo digital e experiências interativas. Também estou participando de uma comunidade de desenvolvedores que promove projetos colaborativos.</p>
+  </div>
+</div>
+
+</body>
+</html>
