@@ -15,8 +15,47 @@
     header {
       background-color: #222;
       color: white;
+      padding: 1rem 0;
       text-align: center;
-      padding: 2rem 0;
+    }
+
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #575757;
+    }
+
+    .menu-icon {
+      display: none;
+      float: right;
+      padding: 14px 16px;
+      cursor: pointer;
+      font-size: 18px;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      nav a { display: none; }
+      nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+      .menu-icon {
+        display: block;
+      }
     }
 
     .container {
@@ -64,6 +103,12 @@
   <p>Conheça mais sobre mim, meus projetos e novidades</p>
 </header>
 
+<nav id="navBar">
+  <span class="menu-icon" onclick="toggleMenu()">☰ Menu</span>
+  <a href="rag.html">RAG</a>
+  <a href="contato.html">Contato</a>
+</nav>
+
 <div class="container">
   <!-- Sobre Mim -->
   <div class="card">
@@ -86,6 +131,13 @@
     <p>Atualmente estou explorando o uso de IA generativa para auxiliar na criação de conteúdo digital e experiências interativas. Também estou participando de uma comunidade de desenvolvedores que promove projetos colaborativos.</p>
   </div>
 </div>
+
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById("navBar");
+    nav.classList.toggle("responsive");
+  }
+</script>
 
 </body>
 </html>
